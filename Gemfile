@@ -47,8 +47,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sqlite3', '~> 1.6', '>= 1.6.7'
-
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -67,5 +65,6 @@ group :test do
 end
 
 group :production do
+  gem 'sqlite3'
   gem 'pg'
 end
